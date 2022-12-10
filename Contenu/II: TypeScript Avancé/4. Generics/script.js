@@ -1,1 +1,15 @@
 "use strict";
+// TODO ______ INTERFACES REUTILISABLES ______ TODO // 
+const London = {
+    name: "London",
+    pop: 10,
+    additionnelData: { area: 1572 }
+};
+// ? Generics permet d'utiliser un argument pour une key qui est définie par l'argument appelant, ici City<object> dis que "T" est object, donc additionnelData à pour value un object
+// TODO ______ WITH FUNCTIONS ______ TODO // 
+const addRepairDate = (obj) => {
+    const lastRepair = new Date();
+    return Object.assign(Object.assign({}, obj), { lastRepair });
+};
+const auto1 = addRepairDate({ model: "A7", km: 7000, price: 60000 });
+// ? Permet d'accéder aux keys/ values de l'objet auto1
