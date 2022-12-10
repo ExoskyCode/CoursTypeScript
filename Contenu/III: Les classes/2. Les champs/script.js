@@ -1,11 +1,11 @@
 "use strict";
 class Book {
-    constructor(t, p, dop, a, th) {
-        this.title = t;
-        this.price = p;
-        this.dateOfParution = dop;
-        this.author = a;
-        this.theme = th;
+    constructor(title, price, dateOfParution, author, theme) {
+        this.title = title;
+        this.price = price;
+        this.dateOfParution = dateOfParution;
+        this.author = author;
+        this.theme = theme;
     }
     promo() {
         return this.price * 0.5;
